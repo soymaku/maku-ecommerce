@@ -23,7 +23,6 @@ const ItemListContainer = () => {
     <div className="container py-5">
       <div className="row">
         <ItemList items={items} />
-        <ItemCount stockItems={10}/>
       </div>
     </div>
   );

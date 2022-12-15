@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
     promesa.then((data) => {
       setItem(data);
     })
-  }, []);
+  }, [id]);
   
   return (
     <div className="container">
