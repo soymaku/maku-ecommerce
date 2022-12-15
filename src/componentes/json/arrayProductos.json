@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cuadro Subrosa MR2",
+    "desc": "Matt Ray signature Frame",
+    "precio": 400,
+    "categoria": "cuadros",
+    "img": "/images/cuadroMR2.webp",
+    "stock":"10"
+  },
+  {
+    "id": 2,
+    "nombre": "Cuadro Subrosa SIMO10",
+    "desc": "Simone Barraco signature Frame",
+    "precio": 320,
+    "categoria": "cuadros",
+    "img": "/images/cuadroSIMO10.webp",
+    "stock":"10"
+  },
+  {
+    "id": 3,
+    "nombre": "Cuadro Subrosa Flight Park",
+    "desc": "Rim Nakamura signature Frame",
+    "precio": 390,
+    "categoria": "cuadros",
+    "img": "/images/cuadroFlight.webp",
+    "stock":"10"
+  },
+  {
+    "id": 4,
+    "nombre": "Horquilla Subrosa Simo",
+    "desc": "Simone Barraco signature Fork",
+    "precio": 165,
+    "categoria": "horquillas",
+    "img": "/images/horquillaSIMO.webp",
+    "stock":"10"
+  },
+  {
+    "id": 5,
+    "nombre": "Horquilla Subrosa OM",
+    "desc": "Joris Coulomb signature Fork",
+    "precio": 165,
+    "categoria": "horquillas",
+    "img": "/images/horquillaOm.webp",
+    "stock":"10"
+  },
+  {
+    "id": 6,
+    "nombre": "Horquilla Shadow Vultus Featherweight",
+    "desc": "The Vultus ADJ Forks take the popular Captive Fork concept of adjustable offset and simplifies the function with 7 series alloy spacers that include magnets.",
+    "precio": 200,
+    "categoria": "horquillas",
+    "img": "/images/horquillaVultusF.webp",
+    "stock":"10"
+  },
+  {
+    "id": 7,
+    "nombre": "Manubrio Subrosa Ray",
+    "desc": "Matt Ray signature Bars",
+    "precio": 80,
+    "categoria": "manubrios",
+    "img": "/images/manubrioRay.webp",
+    "stock":"10"
+  },
+  {
+    "id": 8,
+    "nombre": "Manubrio Subrosa Simo",
+    "desc": "Simone Barraco signature Bars",
+    "precio": 80,
+    "categoria": "manubrios",
+    "img": "/images/manubrioSIMO.webp",
+    "stock":"10"
+  },
+  {
+    "id": 9,
+    "nombre": "Manubrio Shadow Vultus Featherweight",
+    "desc": "The Featherweight features our lightweight 13B tubing profile. Thick where you need it, thinner in less stress areas. We have also reduced the size of our proprietary tear shape cross bar to realize even more weight savings.",
+    "precio": 80,
+    "categoria": "manubrios",
+    "img": "/images/manubrioVultusF.webp",
+    "stock":"10"
+  },
+  {
+    "id": 10,
+    "nombre": "Stem Shadow VVS Frontload",
+    "desc": "Matt Ray Signature Frontload Stem.",
+    "precio": 40,
+    "categoria": "stems",
+    "img": "/images/stemVvs.webp",
+    "stock":"10"
+  },
+  {
+    "id": 11,
+    "nombre": "Stem Shadow Treymone Topload",
+    "desc": "Simone Barraco and Trey Jones signature Topload stem.",
+    "precio": 42,
+    "categoria": "stems",
+    "img": "/images/stemTreymone.webp",
+    "stock":"10"
+  },
+  {
+    "id": 12,
+    "nombre": "Stem Shadow Odin Topload",
+    "desc": "The stem design features a shorter, more stout overall reach. This creates an overall stronger design.",
+    "precio": 40,
+    "categoria": "stems",
+    "img": "/images/stemOdin.webp",
+    "stock":"10"
+  }
+]

@@ -19,7 +19,7 @@ const Footer = () => {
           <p><a href="#" className='text-decoration-none text-muted'>Warranty Info</a></p>
         </div>
         <div className="col-md-4 text-center">
-          <img src={"images/sparkyLogo.webp"} alt="sparky logo" width={200}/>
+          <img src={"/images/sparkyLogo.webp"} alt="sparky logo" width={200}/>
         </div>
         <div className="col-md-4 text-start">
           <h3>What is Sparky's Brands?</h3>
