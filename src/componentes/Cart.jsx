@@ -36,7 +36,7 @@ const Cart = () =>  {
             </thead>
             <tbody>
               {cart.map(item => (
-                <tr>
+                <tr key={item.id}>
                   <td className='align-middle'><img src={item.img} alt={item.nombre} width={120}/></td>
                   <td className='align-middle'><b>{item.nombre}</b></td>
                   <td className='text-center align-middle'><b>{item.quantity}</b></td>

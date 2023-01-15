@@ -1,5 +1,6 @@
 import { doc, addDoc, getFirestore, collection,  updateDoc } from 'firebase/firestore';
 import React, { useContext, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import { CartContext } from './context/CartContext';
 
 const Checkout = () => {
@@ -34,15 +35,15 @@ const Checkout = () => {
         <div className="col my-5">
           <form>
             <div className="mb-3">
-              <label for="nombre" className="form-label">Nombre</label>
+              <label htmlFor="nombre" className="form-label">Nombre</label>
               <input type="text" className="form-control" id="nombre" placeholder='Ingrese su nombre' onInput={(e) => {setNombre(e.target.value)}}/> 
             </div>
             <div className="mb-3">
-              <label for="email" className="form-label">Email</label>
+              <label htmlFor="email" className="form-label">Email</label>
               <input type="text" className="form-control" id="email" placeholder='Ingrese su email' onInput={(e) => {setEmail(e.target.value)}}/> 
             </div>
             <div className="mb-3">
-              <label for="telefono" className="form-label">Telefono</label>
+              <label htmlFor="telefono" className="form-label">Telefono</label>
               <input type="text" className="form-control" placeholder='Ingrese su número de telefono' onInput={(e) => {setTelefono(e.target.value)}}/> 
             </div>
             <button type="button" className="btn btn-primary" onClick={confirmarCompra}>Confirmar compra</button>
@@ -69,10 +70,7 @@ const Checkout = () => {
       </div>
       <div className="row my-5">
         <div className='col'>
-          {orderId ? <div className="alert alert-success text-center" role="alert">
-            <h3>¡Hecho!</h3>
-            <p>Has realizado una compra. Tu número de orden es: {orderId}</p>
-          </div> : ""}
+          {orderId ? <Navigate to={"/findecompra/" + orderId} /> : ""}
         </div>
       </div>
     </div>
