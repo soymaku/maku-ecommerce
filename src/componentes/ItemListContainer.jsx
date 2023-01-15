@@ -1,7 +1,6 @@
 import React, { useState, useEffect }  from 'react';
-import ItemCount from './ItemCount';
-import arrayProductos from './json/arrayProductos.json';
 import ItemList from './ItemList';
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
@@ -9,16 +8,13 @@ const ItemListContainer = () => {
   const {id} = useParams();
   
   useEffect(() => {
-  const promesa = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos);
-    }, 2000)
-  })  
-  promesa.then((data) => {
-    //console.log(data);
-    setItems(data);
-  })
-  }, [id])
+    const db = getFirestore();
+    const itemsCollection = collection(db, "items")
+    const q = id ? query(itemsCollection, where("categoria", "==", id)) : itemsCollection;
+    getDocs(q).then((snapShot) => {
+      setItems(snapShot.docs.map((doc) => ({id:doc.id, ...doc.data()})))
+    })
+}, [id])
   return (
     <div className="container py-5">
       <div className="row">
